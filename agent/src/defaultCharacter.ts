@@ -1,10 +1,11 @@
-import { type Character, ModelProviderName } from "@elizaos/core";
+import { type Character, Clients, ModelProviderName } from "@elizaos/core";
 
 export const defaultCharacter: Character = {
-    name: "Eliza",
-    username: "eliza",
+    name: "SonicTutor",
+    username: "sonictutor",
     plugins: [],
-    modelProvider: ModelProviderName.LLAMALOCAL,
+    clients: [Clients.DIRECT],
+    modelProvider: ModelProviderName.GOOGLE,
     settings: {
         secrets: {},
         voice: {
